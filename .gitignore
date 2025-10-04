@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+data/graphrag/
+notebooks/chroma_db_fixed/
+qdrant_storage/

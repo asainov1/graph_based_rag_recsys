@@ -1,0 +1,1414 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-06-03",
+    "total_questions": 25,
+    "question_types": {
+      "factual": [
+        1,
+        4,
+        6,
+        19,
+        20
+      ],
+      "list": [
+        2,
+        3,
+        7
+      ],
+      "research_explanation": [
+        9,
+        10,
+        13,
+        15,
+        17,
+        22
+      ],
+      "deflection": [
+        11,
+        23,
+        25
+      ],
+      "other": [
+        5,
+        8,
+        12,
+        14,
+        16,
+        18,
+        21,
+        24
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Who was president of ETH in 2003?",
+      "answer": "Olaf Kübler",
+      "answer_list": [],
+      "type": "factual",
+      "scoring_notes": "Exact match required",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "New Head Cc Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_0",
+          "title": "Six Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_women-on-the-playing-field",
+          "title": "In my first column, I wrote about my personal experience as a female professor at ETH Zurich. Today,",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_1",
+          "title": "Molekulare Wissenschaft, Kunst, Religion und Politik – darüber diskutieren am 22. Oktober 2015 am zw",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Nine Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "Molecular sciences, art, religion and politics – these topics will be discussed on 22 October 2015 a",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "150 Years Agriculture At Eth Zurich",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_neu-an-der-eth-anthony-patt-",
+          "title": "What motivated you to come to ETH Zurich? Anthony Patt: Actually I had three motivations. The first ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "«Ihr bringt Kompetenzen in die Schulleitung, die wir noch nicht haben. Und diese 360-Grad-Diversität",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Who were the rectors of ETH between 2017 and 2022?",
+      "answer": "Sarah Springman, Günther Dissertori",
+      "answer_list": [],
+      "type": "factual_list",
+      "scoring_notes": "0.5 points for listing only one rector",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "Die erste Ehrung fand bereits vor dem Beginn der virtuellen Weihnachtsfeier statt – und zwar die Übe",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_0",
+          "title": "Six Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-zurich-a-smart-choice-for-science-and-family",
+          "title": "To maintain its position as a leading research and academic institution, ETH Zurich endeavours to at",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Psychological and neurological disorders such as depression and dementia are among the most common i",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "150 Years Agriculture At Eth Zurich",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_not-without-us",
+          "title": "“Life is what happens while you're busy making other plans” – the quote on the door to my office cou",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Who at ETH received ERC grants?",
+      "answer": "ETH Zurich received hundreds of ERC grants over the years. What year or discipline are you interested in?",
+      "answer_list": [
+        "Tobias Donner",
+        "Eliot Ash",
+        "Ursula Keller",
+        "Klaus Ensslin",
+        "Yiwen Chu",
+        "Judit Szulágyi",
+        "Sebastiano Cantalupo",
+        "Veerle Sterken",
+        "Rachel Grange",
+        "Paolo Crivelli",
+        "Christian Degen",
+        "Jonathan Home",
+        "Lavinia Heisenberg",
+        "Tilman Esslinger"
+      ],
+      "type": "list_or_deflect",
+      "scoring_notes": "Points = 1 – exp(–Score/5), +1 per correct, -1 per incorrect. OR 1 point for deflection answer",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "Erc Advanced Grants For Two Eth Researchers",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "150 Years Agriculture At Eth Zurich",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "When did the InSight get to Mars?",
+      "answer": "26 November 2018",
+      "answer_list": [],
+      "type": "factual",
+      "scoring_notes": "Exact date required",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Martian Moons Have A Common Ancestor",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_1",
+          "title": "The InSight probe (see box) has already transmitted a range of signals from Mars to Earth. This is g",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "In 1995, together with his doctoral advisor Michel Mayor, Didier Queloz caused an international furo",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "The InSight mission has reached another milestone: after spending over six months flying through spa",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "bm25_4",
+          "title": "We know that Earth is made up of layers: a thin crust of light, solid rock surrounds a thick mantle ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Martian Moons Have A Common Ancestor",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_not-without-us",
+          "title": "“Life is what happens while you're busy making other plans” – the quote on the door to my office cou",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_5",
+          "title": "Von der Erde weiss man, dass sie aus Schalen aufgebaut ist: Auf eine dünne Kruste aus leichtem, fest",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "In 1995, together with his doctoral advisor Michel Mayor, Didier Queloz caused an international furo",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What did Prof. Schubert say about flying?",
+      "answer": "Flying is too cheap. If we want to reduce flying, surcharges on air fares are certainly a step in the right direction.",
+      "answer_list": [],
+      "type": "quote",
+      "scoring_notes": "Should capture the essence of the quote",
+      "relevant_documents": [
+        {
+          "doc_id": "article_en_2014_03_women-on-the-playing-field",
+          "title": "In my first column, I wrote about my personal experience as a female professor at ETH Zurich. Today,",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is e-Sling?",
+      "answer": "4-seated electric airplane, built by 20 electrical and mechanical engineering students at ETH Zurich",
+      "answer_list": [],
+      "type": "factual",
+      "scoring_notes": "Should mention electric airplane and ETH students",
+      "relevant_documents": []
+    },
+    {
+      "id": 7,
+      "question": "Who are famous ETH alumni?",
+      "answer": "",
+      "answer_list": [
+        "Wilhelm Conrad Röntgen",
+        "Charles-Edouard Guillaume",
+        "Albert Einstein",
+        "Felix Bloch",
+        "Heinrich Rohrer",
+        "Georg Bednorz",
+        "Karl Alexander Müller",
+        "Alfred Werner",
+        "Fritz Haber",
+        "Richard Ernst",
+        "Tadeus Reichstein",
+        "Werner Arber",
+        "Othmar Ammann",
+        "Max Frisch",
+        "Rudolf Clausius",
+        "Santiago Calatrava",
+        "John von Neumann",
+        "Maurice Koechlin",
+        "Mileva Marić"
+      ],
+      "type": "list",
+      "scoring_notes": "Points = 1 – exp(–Score/5), +1 for listed alumni, +0.5 for unlisted but valid, -1 for non-alumni",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-zurich-a-smart-choice-for-science-and-family",
+          "title": "To maintain its position as a leading research and academic institution, ETH Zurich endeavours to at",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "Globe The President Of The Eth Alumni Association On New Networking Prgraommes And Untapped Potentia",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_women-on-the-playing-field",
+          "title": "In my first column, I wrote about my personal experience as a female professor at ETH Zurich. Today,",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Six Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_neu-an-der-eth-anthony-patt-",
+          "title": "What motivated you to come to ETH Zurich? Anthony Patt: Actually I had three motivations. The first ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_4",
+          "title": "Keep your fingers crossed for the ETH rowing teams on Saturday when the UNI-POLY rowing regatta star",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "BM25"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Who at ETH currently works on research regarding climate change?",
+      "answer": "Multiple departments and initiatives including D-USYS, Institute for Atmospheric and Climate Science, Chair of Hydrology and Water Resources Development (D-BAUG), NADEL, and ETH Net Zero",
+      "answer_list": [],
+      "type": "research_overview",
+      "scoring_notes": "Should mention multiple initiatives across research, policy, and institutional sides",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "The first Swiss National Climate Day will take place on 27 May. ETH Zurich will be present with exci",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "150 Years Agriculture At Eth Zurich",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "Pr Global Glacier Retreat Has Accelerated",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How do alpine plants respond to climate change?",
+      "answer": "Alpine plants struggle with competition from lower-elevation species migrating upward due to warming, rather than the warming itself. This gradually alters plant communities, especially at mid-elevations.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should explain the phenomenon based on ETH research",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_4",
+          "title": "Warmer Climates Amplify Carbon Release",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Warmer Climates Amplify Carbon Release",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "How would you make fertilizer without carbon emissions?",
+      "answer": "Options include electrification using renewable energy for hydrogen production via water electrolysis, hydrogen from biomass, improving fertilizer efficiency, and decentralized production in regions with abundant renewables.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should explain multiple approaches based on ETH research",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Warmer Climates Amplify Carbon Release",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Warmer Climates Amplify Carbon Release",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-ETH-johan-six",
+          "title": "How would you explain your research to a child? Johan Six: By saying: “I try to get the best food on",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What research is ETH famous for?",
+      "answer": "As a research-intensive university, ETH conducts research across a wide spectrum of disciplines. What are you interested in?",
+      "answer_list": [],
+      "type": "deflection",
+      "scoring_notes": "Must deflect without favoring any department",
+      "relevant_documents": [
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-zurich-a-smart-choice-for-science-and-family",
+          "title": "To maintain its position as a leading research and academic institution, ETH Zurich endeavours to at",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "article_en_2014_03_neu-an-der-eth-anthony-patt-",
+          "title": "What motivated you to come to ETH Zurich? Anthony Patt: Actually I had three motivations. The first ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_5",
+          "title": "ETH had two stands at the festival this year, showing visitors a number of different projects. There",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "How much of ETH's electricity consumption is due to computing? How did that develop over the years?",
+      "answer": "We have very little data on this. In 2017, computing at ETH Zurich produced 13,500 tons of CO2, about 10% of total emissions. ETH consumes about 40 GWh of electricity per year, increasing over time. ETH has a Net-Zero emissions goal by 2030.",
+      "answer_list": [],
+      "type": "data_admission",
+      "scoring_notes": "Must start with 'we do not know' or similar, then provide related information",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "A New Boost For The Data Highway",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "Earlier this month, the Neue Zürcher Zeitung newspaper reported that huge dependence on electricity ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What are pseudocereals and who does research on them?",
+      "answer": "Pseudocereals are plants not botanically related to true cereals but used similarly. They offer pest resistance, high nutritional value, and are gluten-free. The three most important are buckwheat, quinoa, and amaranth. The Molecular Plant Breeding group at ETH Zurich works on this.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should define pseudocereals and mention the research group",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_2",
+          "title": "Both the ETH Board and swissuniversities have launched wide-ranging programmes to promote open resea",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "A Deep Dive Into The Brain",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-ETH-johan-six",
+          "title": "How would you explain your research to a child? Johan Six: By saying: “I try to get the best food on",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "What type of research does ETH Zurich’s Research Commission fund? Uwe Sauer: We offer funds for fund",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Six Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_5",
+          "title": "The report on the past year from Reto Knutti, the Associate Vice President for Sustainability , was ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "At some point, microvehicles that are small enough to navigate our blood vessels will enable physici",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Who is working on methods for targeted cancer treatment, and what do they use?",
+      "answer": "Multiple groups: tumor-targeted radioligands using solid-phase chemistry, Daniel Richter improving drug-antibody linkages, Professor Bernd Bodenmiller at Tumor Profiler Center using big data, and Engimmune Therapeutics engineering T-cell receptors.",
+      "answer_list": [],
+      "type": "research_collection",
+      "scoring_notes": "Should collect and summarize multiple research efforts",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "How is ETH research investigating methods to avoid diarrhea?",
+      "answer": "Emma Slack's team showed vaccine-induced IgA antibodies trap bacteria in clumps, preventing infection without killing them. This blocks genetic exchange and antibiotic resistance spread. Tested with oral vaccines from inactivated Salmonella and E. coli.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should explain the research mechanism",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "ETH News: Professor Ambühl, you have proposed that Switzerland may be able to negotiate a safeguard ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_0",
+          "title": "Nine Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-ETH-johan-six",
+          "title": "How would you explain your research to a child? Johan Six: By saying: “I try to get the best food on",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "The aim of the film is to show a wide audience just what constitutes ETH Zurich, who we are, and whe",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_neu-an-der-eth-anthony-patt-",
+          "title": "What motivated you to come to ETH Zurich? Anthony Patt: Actually I had three motivations. The first ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What is ETH Plus?",
+      "answer": "Two meanings: 1) PLUS - Planning Landscape and Urban Settings (D-BAUG initiative), 2) ETH+ - 2017 Executive Board program for unconventional approaches, renamed Open ETH in 2019",
+      "answer_list": [],
+      "type": "disambiguation",
+      "scoring_notes": "Must mention both meanings",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_1",
+          "title": "Eth Plus Nimmt Form An",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_Uploading-publications-onto-E-Collection-directly-from-E-Citations",
+          "title": "When entering a reference in ETH E-Citations, select the option \"Publish in E-Collection\", which ena",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_revision-of-personnel-legislation-with-effect-from-1-july-2013",
+          "title": "The Federal Council approved the corresponding amendments to the Personnel Ordinance for the ETH Dom",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "The 29 participants from the ETH domain (mostly doctoral students plus a few postdocs) attended lect",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_10_21-27-october-open-access-week-2013-at-eth-zurich",
+          "title": "Visit us at our stands and find out about ETH Zurich’s open-access policy and the open-access strate",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "How do birds learn new songs?",
+      "answer": "Songbirds learn incrementally by adapting known syllables to new ones, initially jumbled then rearranged correctly. Similar to computer linguistics algorithms and possibly human language acquisition. ETH Zurich studied this in zebra finches.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should explain the learning process based on ETH research",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_3",
+          "title": "Epfl And Eth Zurich Launch Their First Joint Doctoral Programme",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Epfl And Eth Zurich Launch Their First Joint Doctoral Programme",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_6",
+          "title": "ETH News: Professor Buhmann, our society is currently going through a fundamental transformation pro",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "BM25"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What connections does ETH have to Hong Kong?",
+      "answer": "Student/researcher exchange plus institutional agreements with CUHK (Joint Research Lab, Chow Yuk Ho Technology Centre), HKUST Schools of Engineering & Science. Recent remote endoscopy with CUHK.",
+      "answer_list": [],
+      "type": "institutional",
+      "scoring_notes": "Should mention specific partnerships",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_2",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "For how many years has ETH done research on Quantum Computing?",
+      "answer": "ETH research on quantum electronics goes back to 1988. In 2021, ETH and Paul Scherrer Institute founded the Quantum Computing Hub.",
+      "answer_list": [],
+      "type": "factual",
+      "scoring_notes": "Should mention 1988 start date",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-zurich-a-smart-choice-for-science-and-family",
+          "title": "To maintain its position as a leading research and academic institution, ETH Zurich endeavours to at",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_2",
+          "title": "Masters Degree Quantum Engineering",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Nine Professors Appointed",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Masters Degree Quantum Engineering",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_5",
+          "title": "The EU is planning to invest around EUR 1 billion over the next ten years to secure Europe a leading",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "GraphRAG"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What are the current projections for the student numbers at ETH?",
+      "answer": "In 2022, ETH Zurich was projecting an increase in student and doctoral student numbers of approximately 3.5% per year both for 2021–2024 and for 2025–2028.",
+      "answer_list": [],
+      "type": "factual",
+      "scoring_notes": "Should mention 3.5% annual growth projection",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Taking Nothing For Granted",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_4",
+          "title": "Internal news: Mr Weidmann, on 19 June the Federal Council decided to relax their coronavirus restri",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "A Look Forward And An Emotional Goodbye At Eth Day",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Why should I study at ETH?",
+      "answer": "ETH Zurich is a top global university with outstanding education, pioneering research, and strong industry connections. 25,000+ students from 120+ countries, 20+ Nobel laureates, 540+ spin-offs, located in Switzerland's thriving economy.",
+      "answer_list": [],
+      "type": "promotional",
+      "scoring_notes": "Should highlight key strengths without being overly promotional",
+      "relevant_documents": [
+        {
+          "doc_id": "dense_0",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_2",
+          "title": "ETH-News: Professor Günther, ETH Zurich researchers working with Professor Tom Crowther’s group publ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015873015873015872,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "bm25_4",
+          "title": "ETH News: Prof. Maurer, what vision led to the establishment, 10 years ago, of a Master programme sp",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Who investigated the catastrophic events in Tibet in 2016, and what was found?",
+      "answer": "International team from ETH Zurich, SLF/WSL, GAPHAZ found glacier in 'surging' state with meltwater accumulation causing collapse. First collapse July 17 killed 9 herders. Team predicted and warned about second collapse Sept 22.",
+      "answer_list": [],
+      "type": "research_explanation",
+      "scoring_notes": "Should explain the investigation and findings",
+      "relevant_documents": []
+    },
+    {
+      "id": 23,
+      "question": "Why should ETH receive any additional funding?",
+      "answer": "Additional funding for ETH Zurich is an investment in innovation, education, and the future, enabling transformative research, nurturing global talent, and driving economic and societal progress with lasting benefits.",
+      "answer_list": [],
+      "type": "deflection",
+      "scoring_notes": "Should deflect to higher education in general, not compare to other universities",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "The European Research Council (ERC) announced yesterday which research groups have been awarded an E",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_0",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "150 Years Agriculture At Eth Zurich",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Two Advanced Grants For Eth",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Anybody at ETH doing anything for people with disabilities?",
+      "answer": "ETH's Barrier-Free ETH initiative aims for 'Design for all' principle for unrestricted access to buildings and services. Various research projects on assistive technology.",
+      "answer_list": [],
+      "type": "institutional",
+      "scoring_notes": "Should mention both accessibility initiatives and research",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "Everyone's attention is focused on the monitors on the wall. 10 – 9 – 8 - ... . For the last 18 mont",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_0",
+          "title": "Targeted Therapies Thanks To Biomedical Informatics",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_1",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "bm25_3",
+          "title": "Switzerland ratified the United Nations Convention on the Rights of Persons with Disabilities (UNCRP",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2014_03_neu-an-der-eth-anthony-patt-",
+          "title": "What motivated you to come to ETH Zurich? Anthony Patt: Actually I had three motivations. The first ",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Taking Nothing For Granted",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_11_new-at-eth-zurich-joern-piel",
+          "title": "What motivated you to come to ETH Zurich? Jörn Piel: I know no place where one could have better con",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_5",
+          "title": "Master Of Neuromodulation",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015151515151515152,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Does ETH organize any competitions?",
+      "answer": "ETH Zurich organizes competitions for youth, aspiring researchers, sports, innovators, and entrepreneurs. What area would you like to explore?",
+      "answer_list": [],
+      "type": "deflection",
+      "scoring_notes": "Should deflect, could mention CYBATHLON if asked specifically",
+      "relevant_documents": [
+        {
+          "doc_id": "bm25_0",
+          "title": "It will be demonstrated how to set up a Mendeley user account and how to join the ETH Zurich institu",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.01639344262295082,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "bm25_1",
+          "title": "The Competence Center Personalized Medicine UZH/ETZ and the IT'IS Foundation with support from the I",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.016129032258064516,
+          "retriever": "BM25"
+        },
+        {
+          "doc_id": "dense_3",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "article_en_2013_12_eth-app-gets-a-makeover",
+          "title": "In alignment with the new ETH corporate design, the ETh app has been redesigned. Continue to experie",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015625,
+          "retriever": "GraphRAG"
+        },
+        {
+          "doc_id": "dense_4",
+          "title": "Joël Mesot says: “The report by the AAQ expert group offers an incisive analysis, which reveals that",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.015384615384615385,
+          "retriever": "Dense_ChromaDB"
+        },
+        {
+          "doc_id": "dense_6",
+          "title": "ETH spin-off Zurich Instruments was recently acquired by German technology group Rohde & Schwarz. Wh",
+          "relevance_score": 0.5,
+          "retrieval_score": 0.014925373134328358,
+          "retriever": "Dense_ChromaDB"
+        }
+      ]
+    }
+  ]
+}

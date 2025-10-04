@@ -1,0 +1,108 @@
+{
+  "query": "brain research",
+  "timestamp": "2025-05-23T22:10:41.590966",
+  "results_count": 3,
+  "results": [
+    {
+      "document": {
+        "id": "anxiety-and-the-brains-perception-of-inner-body-signals",
+        "language": "en",
+        "title": "Anxiety And The Brains Perception Of Inner Body Signals",
+        "main_content": "Anxiety and distorted breathing perception: Racing heart, rapid breathing, and sweaty palms - all symptoms of anxiety, but they are also the brain’s way of preparing the body for a potential threat. Such symptoms are a normal and fleeting experience of the human condition, but for people who carry higher levels of anxiety, they perpetuate a downward spiral. The perception of bodily changes, such as heart rate and breathing, reinforce the feelings of anxiety that triggered them in the first place. Until now, technological limitations made it difficult to investigate precisely where, in the brain, this vicious cycle takes place – and how it may be altered in people with higher levels of anxiety. For the first time, researchers are now able to show how certain body signals processed in the brain differ among individuals with different levels of anxiety.\n\nJust like a smoke detector sounds an alarm to warn occupants of a possible fire, deep within the brain, the folds of the so-called anterior insula encode how sensations inside the body such as breathing, the heartbeat, or gastrointestinal pains are perceived. An influential scientific theory suggests that this part of the brain creates models of the body that predict and interpret bodily signals. Its assumed purpose is to predict threats to bodily integrity and sound the alarm when it detects impending bodily harm. This is especially relevant for our understanding of mental health problems. It has long been speculated, for instance, that anxiety is linked to altered prediction signals in the anterior insula. This notion has now been confirmed by Olivia Harrison, lead author of a study recently published in the journal Neuron . She and her team found that in people who maintain higher levels of anxiety, the anterior insula shows an altered response to predicted changes in breathing resistance. In parallel, higher levels of anxiety were found to be associated with an altered perception of bodily signals.\n\nHarrison, now a Research Fellow at the University of Otago in New Zealand, completed the study as a post-doctoral researcher with Professor Klaas Stephan and a research team from the Translational Neuromodeling Unit, part of the University of Zurich and ETH Zurich’s joint Biomedical Engineering Institute. Her study, involving 60 participants with low and moderate levels of anxiety, is the first of its kind to provide evidence consistent with the idea that the anterior insula constructs models of the body's state. Stephan, who co-authored the paper, comments, “Understanding how the brain actively constructs models to protect the body, helps destigmatise mental disorders. This perspective highlights that anxiety can be understood as an adaptive response to an individual experience,” he says.\n\nA new technology made it possible for the neuroscientists to control breathing resistance in their study; and for the first time, to observe brain activity associated with predictions and threatening body perceptions. They were also able to observe how such predictions and perceptions in the brain might be altered by anxiety. Inspired by brain-body interactions, associated research, and her own observations in the context of high-performance sports, Olivia Harrison developed an MRI compatible breathing circuit. The device is based on her earlier research with the Breathe Oxford team at the University of Oxford. In collaboration with Oxford physicist and medical engineer, Sebastian Rieger, Harrison then automated the breathing circuit.\n\nThis invention made it possible to conduct more sophisticated tests of existing theories that, until now, had not yet been demonstrated with real data. The research team used the new technology to develop a Breathing Learning Task and investigate dynamic brain activity associated with predictions and prediction errors for respiration. Using computational models of cognition, the researchers formally assessed both breathing-related learning and metacognition (awareness of thought processes). It represents the first computational assessment of trial-by-trial learning in this field of research.\n\nWhile the results of this study reveal several firsts in quantifying the links between anxiety and the brain’s perception of the body’s inner signals, many unanswered questions remain. “We might believe we are ‘in-tune’ with our bodies,” says Harrison, “but what we’ve seen is that anxiety is actually associated with a reduction of our ability to notice changes in our breathing”. An inability to perceive early symptoms of anxiety – or ‘tuning out’ – may perpetuate these symptoms, leading to an even greater level of anxiety. The results of this study, therefore, offer an early understanding of how communication between the brain and the body can break down with anxiety.\n\nWhile researchers do not yet have all the answers, Harrison observes that Eastern medicine has been using breathing as a tool for improving mental health for centuries. She also indicates that people often experience calm in practicing yoga, meditation, and exercise, but states that scientists do not yet understand the underlying mechanisms of these practices. She anticipates that a better understanding of the brain-body connection will eventually improve treatment for anxiety by giving people the tools to perceive their body differently, breaking the anxiety spiral.",
+        "summary": "Anxiety and distorted breathing perception: Racing heart, rapid breathing, and sweaty palms - all symptoms of anxiety, but they are also the brain’s way of preparing the body for a potential threat....",
+        "keywords": [
+          "Anxiety",
+          "Brain",
+          "Breathing",
+          "Body",
+          "Harrison",
+          "Levels",
+          "Levels anxiety"
+        ],
+        "topics": [
+          "Research",
+          "Weather & Environment",
+          "Technology & Innovation",
+          "Campus Life",
+          "Communication"
+        ],
+        "source_file": "HKNews/en_news_events/2021/10/anxiety-and-the-brains-perception-of-inner-body-signals.json",
+        "year": "2021",
+        "month": "10"
+      },
+      "score": 153.76643729199986,
+      "language": "en",
+      "title": "Anxiety And The Brains Perception Of Inner Body Signals",
+      "summary": "Anxiety and distorted breathing perception: Racing heart, rapid breathing, and sweaty palms - all symptoms of anxiety, but they are also the brain’s way of preparing the body for a potential threat....",
+      "content_snippet": "Anxiety and distorted breathing perception: Racing heart, rapid breathing, and sweaty palms - all symptoms of anxiety, but they are also the brain’s way of preparing the body for a potential threat. Such symptoms are a normal and fleeting experience of the human condition, but for people who carry higher levels of anxiety, they perpetuate a downward spiral...."
+    },
+    {
+      "document": {
+        "id": "brain-stimulation",
+        "language": "en",
+        "title": "Brain Stimulation",
+        "main_content": "Some videos on the internet are remarkably striking. In one, a man is sitting on the sofa holding a remote control. His hands and arms are trembling and shaking in a way that clearly indicates Parkinson’s disease. He lifts the remote control, points it at his chest and presses a grey button – and his tremors subside almost immediately. What we don’t see in the video are the two electrodes in the patient’s brain connected to a pacemaker implanted in his chest. When he presses the button, the pacemaker delivers electrical pulses to the basal ganglia, a group of neurons involved in movement planning and control. Stimulating this brain area, which is heavily affected by Parkinson’s disease, causes the motor symptoms to cease almost immediately – producing an almost spooky effect.\n\n“Deep brain stimulation for Parkinson’s disease may well be one of neuroscience’s greatest success stories,” says Johannes Bohacek, an assist­ant professor at the Institute for Neuro­science at ETH Zurich. Researchers are also experimenting with brain stimulation as a means of treating depression, but much of the research is still in its infancy – and some still seems like pure science fiction.\n\nBohacek uses brain stimulation to investigate how stress affects the organism. “Acute and chronic stress are risk factors for mental disorders,” he says. Yet unravelling stress responses is a highly complex business, he notes, because stress affects not only the brain, but the entire body, involving many organs, hormones and neurotransmitters. “That makes it harder to conduct targeted research into stress as a specific phenomenon.”\n\nThat’s why Bohacek has opted to simplify things by focusing on individual elements. He is currently investigating the noradrenergic system, which plays a key role in stress. In situations of acute stress – for example when a fire alarm suddenly goes off – the brain is flooded with norepinephrine. The principal site responsible for synthesising norepinephrine is a tiny area of the brain called the locus coe­ruleus. This is hidden away deep in the brain stem rather like a needle in a haystack. “It is far too small and difficult to access for the kind of probes we use for deep brain stimulation,” says Bohacek. An overactive locus coeruleus can cause certain types of anxiety and panic disorders, which is why many scientists and the pharmaceutical industry are so determined to gain a better understanding of how it works.\n\nIn order to ascertain what happens in this particular brain area in stressful situations, the ETH professor uses designer viruses to specifically modify the activity of neurons in the locus coer­uleus. To do this, he works with a special mouse line that restricts expression of the virus selectively to the locus coeruleus. The virus then causes an artificial receptor (receptor mol­ecule) to form on the surface of the nerve cells, and specific substances can activate this receptor, much like a single key fitting a specific lock.\n\nBy activating these receptors, the researchers can trigger the release of norepinephrine without the need to activate the entire stress system. This allows Bohacek and his team to then study the changes that unfold in response to noradrenaline release in the entire brain.\n\nThe neuroscientist hopes these kinds of experiments will lead to a better understanding of the causes of stress disorders. “In order to develop more effective therapies, we first need to gain a greater insight into the molecu­lar stress mechanisms. Regulating the excitability of locus coeru­leus neurons using similar methods to brain stimulation would be a very interesting approach,” says Bohacek. “But it remains to be seen if and when these techniques will finally become a clinical reality.”\n\nNew therapies for brain disorders are also at the top of Mehmet Fatih Yanik’s agenda. “We’re working on technologies to fix network dysfunctions in brain disorders. Such dysfunctions are at the heart of many brain disorders ranging from depression and schizophrenia, to autism,” says Yanik, Professor of Neurotechnology at the Institute of Neuroinformatics at ETH and the University of Zurich.\n\nPills are still the most common way to treat brain disorders. The active substance in the medication binds to the corresponding target molecule in a nerve cell, typically triggering or in­hibiting a biochemical signalling cascade in the cell. This is a relatively undirected approach, however, since, in many cases, the drugs’ targets are located throughout the entire brain or even in other parts of the body – not just in the specific area of brain that the drug is meant to act on.\n\nYanik therefore has a rather different idea of what brain disorder therapies might look like in the future. “Right now it’s nothing more than a vision!” he says with a grin. But it’s a vision he clearly takes seriously: he recently made a successful application to obtain EU funding for the project.\n\nHis idea envisages a person lying in bed with their head on a smart pillow containing sensors that communicate wirelessly with microchips implanted in the patient’s cerebral cortex. As the patient sleeps, thousands of tiny embedded electrodes transmit high- resolution information on the activity of individual nerve cells to the chips’ processing units. These, in turn, calculate whether the brain circuits are functioning normally or if they are exhibiting pathological activity patterns that require therapeutic intervention.\n\nIn the latter case, an implant connected to the bloodstream releases micro­particles containing active agents. The chips activate further modules that generate ultrasonic waves and direct them to a specific point in the brain. The particles cluster together briefly at that point and then release the active agents, which successfully normalise the misfiring brain circuits in a highly focused and extremely targeted way.\n\nThough he is still decades away from implementing this kind of system, some pieces of the puzzle are already the subject of major research work and animal trials. One example is the use of focused ultrasound to release active agents. Yanik and his colleagues recently succeeded in using weak ultra­sonic waves to cluster and break open microparticles in target brain areas of rats, releasing batches of active agents that have already been approved for clinical applications. Yanik’s team has also developed novel algorithms to detect patho­­logic­al brain activity patterns and even to fully correct brain disorders in small animals.\n\nThe question remains open as to whether humanity really needs this kind of science-fiction scenario to cure brain disorders. Yanik is convinced it does: “Our existing therapies are not up to the job. Forty percent of the most devastating brain disorders remain untreatable. Swallowing pills to treat mental illness or, at best, bombarding the brain with electromagnetic or ultra­sound waves is about as effective as trying to repair a supercomputer with a hammer.”",
+        "summary": "This is a relatively undirected approach, however, since, in many cases, the drugs’ targets are located throughout the entire brain or even in other parts of the body – not just in the specific area of brain that the drug is meant to act on....",
+        "keywords": [
+          "Brain",
+          "Disorders",
+          "Stress",
+          "Brain disorders",
+          "Bohacek",
+          "Says",
+          "Yanik"
+        ],
+        "topics": [
+          "Weather & Environment",
+          "Research",
+          "Technology & Innovation",
+          "Communication",
+          "Staff",
+          "COVID-19"
+        ],
+        "source_file": "HKNews/en_news_events/2019/06/brain-stimulation.json",
+        "year": "2019",
+        "month": "06"
+      },
+      "score": 152.33517908659147,
+      "language": "en",
+      "title": "Brain Stimulation",
+      "summary": "This is a relatively undirected approach, however, since, in many cases, the drugs’ targets are located throughout the entire brain or even in other parts of the body – not just in the specific area of brain that the drug is meant to act on....",
+      "content_snippet": "...He lifts the remote control, points it at his chest and presses a grey button – and his tremors subside almost immediately. What we don’t see in the video are the two electrodes in the patient’s brain connected to a pacemaker implanted in his chest. When he presses the button, the pacemaker delivers electrical pulses to the basal ganglia, a group of neurons involved in movement planning and control...."
+    },
+    {
+      "document": {
+        "id": "ein-delegierter-fuer-den-eth-rat",
+        "language": "de",
+        "title": "Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat.",
+        "main_content": "Main article: Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat.\n\nAn der Veranstaltung erläutert ETH-Ratspräsident Fritz Schiesser die Rolle des ETH-Rats als strategisches Führungsorgan des ETH-Bereichs (ETH, EPFL, PSI, WSL, Empa, Eawag). Aufgaben, Rolle und Positionierung des ETH-Bereichs und des ETH-Rats werden angesprochen, besonders im Hinblick auf die neue Konstellation der swissuniversities, dem gemeinsamen hochschulpolitischen Organ der Schweizer Hochschulen. Welche direkten und indirekten Konsequenzen hat es für die ETH Zürich, nach neuem Bundesgesetz mit allen anderen Hochschulen unter einem Dach organisiert zu sein?\n\nMarkus Stauffacher. (Illustration: Kornel Stadler)\n\nIm ETH-Rat sind die beiden Hochschulversammlungen von ETH Zürich und EPF Lausanne durch eine/n Delegierte/n vertreten. Sie oder er wird auf Antrag der beiden Hochschulversammlungen vom Bundesrat für eine Dauer von vier Jahren ernannt.\n\nDer derzeitige Delegierter, Markus Stauffacher, wird nach einem Jahrzehnt höchst engagierter und erfolgreicher Tätigkeit sein Amt auf Ende 2016 altershalber niederlegen. Entsprechend wird die Position der/des Delegierten zur Zeit neu ausgeschrieben. Bewerbungsschluss ist Ende dieses Jahres. Markus Stauffacher steht bei dieser Informationsveranstaltung für Fragen zur Verfügung\n\nDie Stellenausschreibung wird am 9. November 2015 auf www.hv.ethz.ch sowie auf externe Seite ETH-Jobs veröffentlicht.\n\nInformationsveranstaltung der Hochschulversammlung: «Der ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat» Vortrag von Fritz Schiesser, Präsident des ETH-Rats, mit anschliessender Diskussion und Apéro\n\nMontag, 16. November 2015, 16:30 Uhr ETH-Hauptgebäude HG E 3, Rämistrasse 101, 8092 Zürich\n\nKeine Anmeldung erforderlich",
+        "summary": "Main article: Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat....",
+        "keywords": [
+          "ETH Zurich",
+          "Delegierten",
+          "Hochschulversammlung",
+          "Rolle",
+          "Zürich",
+          "Ethrat",
+          "Ethrats"
+        ],
+        "topics": [
+          "Campus Life",
+          "Staff",
+          "Communication",
+          "University Administration",
+          "Catering & Food",
+          "Infrastructure"
+        ],
+        "source_file": "HKNews/de_internal/2015/10/ein-delegierter-fuer-den-eth-rat.json",
+        "year": "2015",
+        "month": "10"
+      },
+      "score": 10.031096829453464,
+      "language": "de",
+      "title": "Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat.",
+      "summary": "Main article: Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat....",
+      "content_snippet": "Main article: Die Hochschulversammlung der ETH Zürich lädt alle ETH-Angehörigen herzlich ein zu einer Informationsveranstaltung über den ETH-Bereich und die Rolle des Delegierten der Hochschulversammlung im ETH-Rat.\n\nAn der Veranstaltung erläutert ETH-Ratspräsident Fritz Schiesser die Rolle des ETH-Rats als strategisches Führungsorgan des ETH-Bereichs (ETH, EPFL, PSI, WSL, Empa, Eawag)...."
+    }
+  ]
+}
