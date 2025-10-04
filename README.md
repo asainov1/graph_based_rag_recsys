@@ -40,6 +40,48 @@ graph_based_rag_recsys/
 
 ---
 
+📊 Benchmarking
+We provide benchmark/benchmark_qa.json with ETH Zurich–related questions to evaluate retrieval quality and answer accuracy.
+You can run:
+python scripts/generate_answers_groq.py
+to retrieve documents, generate answers with Groq LLM, and compare against reference answers.
+
+🧠 Reranking System
+The reranking module supports:
+tinybert (fast)
+minilm (balanced)
+bge (SOTA)
+ensemble (combines all)
+Reranking boosts precision by reordering top retrieved results using cross-encoder similarity.
+
+📝 Roadmap
+ 🧭 Add more dense backends (Weaviate, Milvus)
+ 🧪 Add LangGraph-based multi-agent orchestration
+ 🖼️ Add Streamlit UI demo for interactive retrieval
+ 🧮 Add retrieval evaluation metrics (nDCG, Recall@k, MRR)
+ 
+🤝 Contributing
+Contributions are welcome!
+To contribute:
+Fork the repo
+Create a new branch (feature/my-feature)
+Commit changes (git commit -m "Add new feature")
+Push and open a pull request
+
+📜 License
+This project is released under the MIT License.
+© 2025 Alikhan Sainov
+
+⭐ Support
+If you found this project helpful, please consider starring the repo ⭐
+Your support helps keep the project alive and visible to others!
+
+📌 Acknowledgements
+Qdrant for vector search
+SentenceTransformers for embeddings
+Groq for ultra-fast LLM inference
+ETH Zurich datasets for evaluation examples
+
 ## ⚡️ Quickstart
 
 ### 1️⃣ Clone the repository
@@ -62,39 +104,3 @@ python scripts/test_dense_query.py
 python scripts/build_graphrag.py
 🔹 Generate Answers with Groq LLM
 python scripts/generate_answers_groq.py
-
-📊 Benchmarking
-We provide benchmark/benchmark_qa.json with ETH Zurich–related questions to evaluate retrieval quality and answer accuracy.
-You can run:
-python scripts/generate_answers_groq.py
-to retrieve documents, generate answers with Groq LLM, and compare against reference answers.
-🧠 Reranking System
-The reranking module supports:
-tinybert (fast)
-minilm (balanced)
-bge (SOTA)
-ensemble (combines all)
-Reranking boosts precision by reordering top retrieved results using cross-encoder similarity.
-📝 Roadmap
- 🧭 Add more dense backends (Weaviate, Milvus)
- 🧪 Add LangGraph-based multi-agent orchestration
- 🖼️ Add Streamlit UI demo for interactive retrieval
- 🧮 Add retrieval evaluation metrics (nDCG, Recall@k, MRR)
-🤝 Contributing
-Contributions are welcome!
-To contribute:
-Fork the repo
-Create a new branch (feature/my-feature)
-Commit changes (git commit -m "Add new feature")
-Push and open a pull request
-📜 License
-This project is released under the MIT License.
-© 2025 Alikhan Sainov
-⭐ Support
-If you found this project helpful, please consider starring the repo ⭐
-Your support helps keep the project alive and visible to others!
-📌 Acknowledgements
-Qdrant for vector search
-SentenceTransformers for embeddings
-Groq for ultra-fast LLM inference
-ETH Zurich datasets for evaluation examples
