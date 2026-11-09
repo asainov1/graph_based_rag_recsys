@@ -1,106 +1,129 @@
-# 🧠 Graph-Based RAG Recommender System
+# Graph-Based Hybrid RAG for Multilingual News
 
-A **hybrid retrieval system** that combines **BM25**, **Dense Vector Search (Qdrant/Chroma)**, and **GraphRAG** for high-quality retrieval, fusion, and reranking.  
-Designed for advanced question-answering, content generation, and retrieval-augmented generation (RAG) pipelines.
+Hybrid retrieval and question answering over the **ETH Zurich news archive** (English and German).
+Three retrievers, **multilingual BM25**, **dense vectors** (Qdrant / Chroma) and **GraphRAG** over a knowledge
+graph of people, organisations and topics, are fused with Reciprocal Rank Fusion, reranked by cross-encoders,
+and passed to an LLM (Groq) that writes the answer.
 
-![Architecture Diagram](https://user-images.githubusercontent.com/00000000/architecture.png) <!-- optional: replace with your own image -->
+```mermaid
+flowchart LR
+  HTML[News HTML<br/>EN + DE] --> P[Hybrid parser<br/>BeautifulSoup + Docling]
+  P --> J[(Clean JSON articles)]
+  J --> BM[Multilingual BM25]
+  J --> DV[Dense retrieval<br/>Qdrant / Chroma]
+  J --> G[Knowledge graph<br/>spaCy NER + NetworkX]
+  G --> GR[GraphRAG<br/>local → global expansion]
+  BM --> F{RRF fusion}
+  DV --> F
+  GR --> F
+  F --> R[Cross-encoder reranking]
+  R --> LLM[Answer generation<br/>Groq]
+```
 
----
+## Features
 
-## 🚀 Features
+- **Article extraction** — BeautifulSoup and Docling combined to pull clean main text and structure from HTML news pages.
+- **Multilingual BM25** — query language detection, EN ↔ DE query translation, per-language NLTK preprocessing.
+- **Dense retrieval** — Sentence-Transformers embeddings (`all-MiniLM-L6-v2`) in Qdrant or Chroma.
+- **GraphRAG** — knowledge graph built from spaCy entities (EN and DE models) with `contains`, `co-occurs`,
+  `temporal` and `shared_topic` edges; retrieval seeds articles with `multilingual-e5-large` similarity and
+  expands up to two hops through shared entities and topics.
+- **Hybrid fusion** — Reciprocal Rank Fusion (k = 60) or weighted score fusion.
+- **Multi-model reranking** — TinyBERT, MiniLM and BGE cross-encoders, an ensemble of all three, keyword boost,
+  optional Cohere.
+- **Answer generation** — fast LLM answers via Groq over the reranked context.
+- **Evaluation** — Precision@k, Recall@k and MRR; GraphRAG compared with the other retrievers and the hybrid.
 
-- 🔸 **BM25 Retrieval** — Multilingual keyword-based search with NLTK preprocessing  
-- 🔸 **Dense Retrieval** — SentenceTransformer embeddings + Qdrant/Chroma backends  
-- 🔸 **GraphRAG Retrieval** — Knowledge graph–based local and global expansion  
-- 🔸 **Hybrid Fusion** — Reciprocal Rank Fusion (RRF) for combining retrievers  
-- 🔸 **Multi-Model Reranking** — TinyBERT / MiniLM / BGE ensemble reranker  
-- 🔸 **Groq LLM Evaluation** — Optional integration for fast answer generation
+## Repository structure
 
----
-
-## 📁 Repository Structure
-
+```
 graph_based_rag_recsys/
-├── agents/ # (Optional) multi-agent orchestration logic
-├── benchmark/ # Benchmark QA datasets & evaluation utilities
-├── data/
-│ └── documents/ # Example ETH Zurich articles for BM25 & dense retrievers
-├── docker/ # Dockerfiles & deployment configs
-├── hybrid_retrieval/ # Core hybrid retriever, reranker, adapters
-├── scripts/ # Data ingestion, graph building, Groq evaluation
-│ ├── build_graphrag.py
-│ ├── ingest_dense.py
-│ ├── generate_answers_groq.py
-│ └── test_dense_query.py
-├── .env.example # Example environment variables (no secrets)
-├── .gitignore
+├── hybrid_retrieval/
+│   ├── multilingual_bm25/   # BM25 with language detection and query translation
+│   ├── graphrag/            # entity extraction, graph building, GraphRAG retriever, evaluation, visualiser
+│   ├── adapters/            # BM25 / dense / GraphRAG behind one interface
+│   ├── score_fusion.py      # RRF and weighted fusion
+│   ├── reranking.py         # cross-encoder and ensemble reranking
+│   └── hybrid_retriever.py  # orchestrator: retrieve → fuse → rerank
+├── scripts/
+│   ├── few_hybrid_parsing.py    # HTML → clean text (BeautifulSoup + Docling)
+│   ├── ingest_dense.py          # embed articles into Qdrant
+│   ├── build_graphrag.py        # build the knowledge graph
+│   ├── test_dense_query.py      # try the dense retriever
+│   └── generate_answers_groq.py # answer the benchmark questions with Groq
+├── benchmark/               # ETH QA benchmark, sample German articles, query results
+├── data/documents/          # sample articles (JSON)
+├── docker/                  # Qdrant docker-compose
+├── agents/                  # notebooks for agent experiments
 ├── requirements.txt
-├── requirements_min.txt
-└── README.md
+└── requirements_min.txt     # BM25 + graph only
+```
 
----
+Each article is one JSON file: `language`, `title`, `date`, `source`, `main_content`, `summary`, `keywords`, `topics`.
 
-📊 Benchmarking
-We provide benchmark/benchmark_qa.json with ETH Zurich–related questions to evaluate retrieval quality and answer accuracy.
-You can run:
-python scripts/generate_answers_groq.py
-to retrieve documents, generate answers with Groq LLM, and compare against reference answers.
+## Quickstart
 
-🧠 Reranking System
-The reranking module supports:
-tinybert (fast)
-minilm (balanced)
-bge (SOTA)
-ensemble (combines all)
-Reranking boosts precision by reordering top retrieved results using cross-encoder similarity.
-
-📝 Roadmap
- 🧭 Add more dense backends (Weaviate, Milvus)
- 🧪 Add LangGraph-based multi-agent orchestration
- 🖼️ Add Streamlit UI demo for interactive retrieval
- 🧮 Add retrieval evaluation metrics (nDCG, Recall@k, MRR)
- 
-🤝 Contributing
-Contributions are welcome!
-To contribute:
-Fork the repo
-Create a new branch (feature/my-feature)
-Commit changes (git commit -m "Add new feature")
-Push and open a pull request
-
-📜 License
-This project is released under the MIT License.
-© 2025 Alikhan Sainov
-
-⭐ Support
-If you found this project helpful, please consider starring the repo ⭐
-Your support helps keep the project alive and visible to others!
-
-📌 Acknowledgements
-Qdrant for vector search
-SentenceTransformers for embeddings
-Groq for ultra-fast LLM inference
-ETH Zurich datasets for evaluation examples
-
-## ⚡️ Quickstart
-
-### 1️⃣ Clone the repository
 ```bash
+# 1. Clone and create an environment
 git clone https://github.com/asainov1/graph_based_rag_recsys.git
 cd graph_based_rag_recsys
-2️⃣ Create and activate a virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-3️⃣ Install dependencies
+python3 -m venv .venv && source .venv/bin/activate
+
+# 2. Install dependencies
 pip install -r requirements.txt
-4️⃣ Start Qdrant (for dense retrieval)
-docker run -p 6333:6333 qdrant/qdrant
-5️⃣ Run hybrid retrieval tests
-python -m hybrid_retrieval.test_hybrid
-🧪 Example Usage
-🔹 Test Dense Retriever
-python scripts/test_dense_query.py
-🔹 Build GraphRAG Knowledge Graph
+pip install spacy qdrant-client docling beautifulsoup4 pyvis
+python -m spacy download en_core_web_sm
+python -m spacy download de_core_news_sm
+
+# 3. Start Qdrant
+docker compose -f docker/qdrant-docker-compose.yml up -d
+
+# 4. Index the articles and build the graph
+python scripts/ingest_dense.py
 python scripts/build_graphrag.py
-🔹 Generate Answers with Groq LLM
+
+# 5. Run hybrid retrieval
+python -m hybrid_retrieval.test_hybrid
+python scripts/test_dense_query.py
+
+# 6. Generate answers with Groq
+export GROQ_API_KEY=...
 python scripts/generate_answers_groq.py
+```
+
+## Benchmarking
+
+`benchmark/eth_benchmark_qa.json` contains 25 questions about ETH Zurich history, each with a hint and a reference
+answer. `scripts/generate_answers_groq.py` retrieves context, generates answers and compares them with the
+references; `hybrid_retrieval/graphrag/evaluation.py` and `compare_retrievers.py` report Precision@k, Recall@k
+and MRR per retriever.
+
+## Reranking
+
+| Method | Model | Use |
+|---|---|---|
+| `tinybert` | `cross-encoder/ms-marco-TinyBERT-L-2-v2` | fastest |
+| `minilm` | `cross-encoder/ms-marco-MiniLM-L-6-v2` | balanced |
+| `bge` | `BAAI/bge-reranker-base` | most accurate |
+| `ensemble` | all three, rank-level fusion | most robust |
+
+Rerankers reorder the fused top results by scoring each (query, passage) pair with a cross-encoder.
+
+## Roadmap
+
+- nDCG and a larger benchmark with multi-hop questions
+- Typed relations from an LLM extractor (e.g. *president of*, *founded in*) instead of co-occurrence only
+- Iterative retrieval / question decomposition for multi-hop questions
+- LangGraph-based agent orchestration
+- Streamlit demo UI
+
+## License
+
+MIT © 2025 Alikhan Sainov
+
+## Acknowledgements
+
+Built as a team project; hybrid HTML parser by Daria.
+Thanks to [Qdrant](https://qdrant.tech), [Sentence-Transformers](https://www.sbert.net), [spaCy](https://spacy.io),
+[NetworkX](https://networkx.org), [Docling](https://github.com/docling-project/docling) and [Groq](https://groq.com).
+Example articles come from ETH Zurich news.
